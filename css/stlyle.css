@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --primarFont :'Poppins', sans-serif;
+    --secondaryFont : 'PT Sans', sans-serif;
+    --secondaryColor :#353535;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, p, span{
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* nav start */
+nav{
+    background-color:#fff ;
+}
+
+@media(min-width:320px) and (max-width:767px){
+   
+}
+
+nav .navbar-toggler{
+    border: 0;
+    box-shadow: none;
+}
+
+#MyMenu ul li a{
+color: var(--secondaryColor);
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 200%;
+text-transform: uppercase;
+padding: 18px 22px 5px;
+position: relative;
+}
+
+
+#MyMenu ul li a::after{
+content:'';
+width: 0px;
+height: 1px;
+background-color: var(--secondaryColor) !important;
+position: absolute;
+bottom: 0;
+left: 0;
+transition: 0.3s;
+
+}
+
+#MyMenu ul li:hover a::after{
+    width: 100%;
+}
+/* nav ends */
